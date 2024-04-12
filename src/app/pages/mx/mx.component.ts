@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-mx',
+  selector: 'app-mx-page',
   standalone: true,
   imports: [],
   templateUrl: './mx.component.html',

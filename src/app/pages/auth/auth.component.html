@@ -9,9 +9,16 @@
           Sign in
         </h2>
         <div class="flex flex-col gap-4">
-          <app-input-component inputId="inputEmail" label="Email"></app-input-component>
-          <app-input-component inputId="inputPassword" label="Password"></app-input-component>
+          <app-input-component inputId="email" label="Email" type="email" value=""></app-input-component>
+          <app-input-component inputId="password" label="Password" type="password"></app-input-component>
         </div>
+        <app-buttonRed-component text="Login"></app-buttonRed-component>
+        <p class="text-neutral-500 mt-12">
+          First time using Netflix?
+          <span class="text-white ml-1 hover:underline cursor-pointer">
+            Create an account
+          </span>
+        </p>
       </div>
     </div>
   </div>

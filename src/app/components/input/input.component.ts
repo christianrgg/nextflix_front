@@ -10,8 +10,8 @@ import {Component, Input} from '@angular/core';
 export class InputComponent {
   //protected readonly input = input;
   @Input() inputId = '';
-  //@Input() value = '';
+  @Input() value = '';
   @Input() label= '';
-  //@Input() type='';
+  @Input() type?='';
   constructor() {}
 }

@@ -1,5 +1,4 @@
-import {Component, input} from '@angular/core';
-import {InputInterface} from "../../interfaces/input.interface";
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-input-component',
@@ -9,5 +8,10 @@ import {InputInterface} from "../../interfaces/input.interface";
   styleUrl: './input.component.scss'
 })
 export class InputComponent {
-  protected readonly input = input;
+  //protected readonly input = input;
+  @Input() inputId = '';
+  //@Input() value = '';
+  @Input() label= '';
+  //@Input() type='';
+  constructor() {}
 }

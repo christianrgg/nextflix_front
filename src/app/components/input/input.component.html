@@ -1,6 +1,6 @@
 <div class="relative">
   <input
-    id="input"
+    [id]="inputId"
     class="
       block
       rounded-md
@@ -36,6 +36,6 @@
     peer-focus:scale-75
     peer-focus:-translate-y-3
     "
-    For="input"
-  >Email</label>
+    [for]="inputId"
+  >{{label}}</label>
 </div>

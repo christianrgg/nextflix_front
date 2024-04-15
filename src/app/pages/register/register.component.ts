@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
-import {InputComponent} from "../../components/input/input.component";
 import {ButtonRedComponent} from "../../components/button-red/button-red.component";
+import {InputComponent} from "../../components/input/input.component";
 import {RouterLink} from "@angular/router";
 
 @Component({
-  selector: 'app-auth-page',
+  selector: 'app-register-page',
   standalone: true,
   imports: [
-    InputComponent,
     ButtonRedComponent,
+    InputComponent,
     RouterLink
   ],
-  templateUrl: './auth.component.html',
-  styleUrl: './auth.component.scss'
+  templateUrl: './register.component.html',
+  styleUrl: './register.component.scss'
 })
-export class AuthComponent {
+export class RegisterComponent {
 
 }

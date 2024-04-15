@@ -6,17 +6,19 @@
     <div class="flex justify-center">
       <div class=" bg-black bg-opacity-70 px-16 py-16 self-center mt-2 lg:w-2/5 lg:max-w-md rounded-md w-full">
         <h2 class="text-white text-4xl mb-8 font-semibold">
-          Sign in
+          Register
         </h2>
         <div class="flex flex-col gap-4">
-          <app-input-component inputId="email" label="Email" type="email" value=""></app-input-component>
+          <app-input-component inputId="name" label="Name" type="text" value=""></app-input-component>
+          <app-input-component inputId="email" label="Email Address" type="email" value=""></app-input-component>
           <app-input-component inputId="password" label="Password" type="password"></app-input-component>
+          <app-input-component inputId="password" label="Confirm password" type="password"></app-input-component>
         </div>
-        <app-buttonRed-component text="Login"></app-buttonRed-component>
+        <app-buttonRed-component text="Sign up"></app-buttonRed-component>
         <p class="text-neutral-500 mt-12">
-          First time using Netflix?
-          <span class="text-white ml-1 hover:underline cursor-pointer" [routerLink]="['/register']">
-            Create an account
+          Already have an account?
+          <span class="text-white ml-1 hover:underline cursor-pointer" [routerLink]="['/login']">
+            Log in
           </span>
         </p>
       </div>
